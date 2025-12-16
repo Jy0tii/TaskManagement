@@ -30,7 +30,7 @@
             <!-- Due Date -->
             <div class="mb-3">
                 <label asp-for="TaskDueDate" class="form-label fw-semibold"></label>
-                <input asp-for="TaskDueDate" type="date" class="form-control" />
+                <input asp-for="TaskDueDate" type="date" class="form-control" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
                 <span asp-validation-for="TaskDueDate" class="text-danger"></span>
             </div>
 
